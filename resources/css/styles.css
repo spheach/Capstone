@@ -1,0 +1,172 @@
+/* Universal Styling */
+html{
+    font-size: 16px;
+}
+
+body{
+    font-family: "Helvetica", "Georgia", sans-serif;
+    line-height: 1.5;
+}
+
+div{
+    border: 1px solid black;
+}
+
+h1{
+    font-size: 4rem;
+    padding-bottom: 2rem;
+}
+
+h2{
+    font-size: 3rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+h4{
+    font-size: 1.5rem;
+    padding-bottom: 2rem;
+}
+
+.container{
+    margin: 0;
+    /*max-width: 1024px;*/
+    justify-content: center;
+}
+
+/* Header Styling */
+.logo{
+    display: flex;
+    padding-left: 2rem;
+    height: 5.33rem;
+    /*justify-content: center;*/
+}
+
+.logo img{
+    margin: auto;
+    height: 4rem;
+}
+
+.business{
+    margin: auto;
+    font-size: 2rem;
+    padding: 0 3rem 0 0.25rem;
+    /*align-items: center;*/
+    /*text-align: center;*/
+}
+
+.menu{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    /*padding: 0 2rem 0 3rem;*/
+}
+
+.nav-items{
+    font-size: 1.25rem;
+    padding-right: 1.5rem;
+}
+
+/* Banner Styling */
+.banner{
+    display: flex;
+    background-color: lightgray;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner img{
+    display: flex;
+    max-width: 60%;
+    /*height: auto;*/
+    /*margin: 2rem;*/
+    padding: 2rem 2.5rem 2rem 2rem;
+
+}
+
+.banner-content{
+    display: block;
+    margin-right: 2rem;
+    padding: 2rem 2.5rem;
+    width: 30%;
+    /*justify-content: center;
+    align-items: center;*/
+}
+
+.start-btn{
+    padding: 0.5rem;
+}
+
+.main-information{
+    display: flex;
+    /*justify-content: center;*/
+}
+
+/*.information{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margain: 0 auto;
+    padding: 2rem, 2.5rem 2rem 2rem;
+    justify-content: space-between;
+}*/
+
+.container .main-information{
+    display: flex;
+}
+
+.main-information{
+    /*display: flex;*/
+    /*margin: 2rem;*/
+    padding: 2rem, 2.5rem 2rem 2rem;
+    width: 60%;
+    /*height: auto;*/
+}
+
+.main-image{
+    /*display: flex;*/
+    /*width: 60%;*/
+    height: auto;
+    padding: 2rem;
+}
+
+.main-image img{
+    display: flex;
+    height: auto;
+        padding: 2rem, 2.5rem 2rem 2rem;
+}
+
+.columns{
+    /*display: flex;*/
+    /*flex-direction: column;*/
+    margin: 0 auto;
+    width: 1024px;
+}
+
+.information-orient{
+    display: flex;
+    /*flex-direction: column;*/
+    widht: 30%
+    height: auto;
+    /*background-color: red;*/
+}
+
+.information-campus{
+    display: flex;
+    widht: 30%
+    height: auto;
+    background-color: blue;
+}
+
+.information-lecture{
+    display: flex;
+    widht: 30%
+    height: auto;
+    background-color: yellow;
+}
