@@ -1,45 +1,57 @@
-/* Universal Styling */
 html{
     font-size: 16px;
+    font-family: Helvetica, sans-serif;
 }
 
-body{
-    font-family: "Helvetica", "Georgia", sans-serif;
-    line-height: 1.5;
-}
-
-div{
-    border: 1px solid black;
+nav{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
 }
 
 h1{
-    font-size: 4rem;
-    padding-bottom: 2rem;
+    font-size: 3rem;
+    font-weight: bold;
+
 }
 
 h2{
-    font-size: 3rem;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+h3{
+    font-size: 1.75rem;
+    font-weight: bold;
 }
 
 h4{
-    font-size: 1.5rem;
-    padding-bottom: 2rem;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 1rem;
 }
+
+
+
+/*
+div{
+    border: 1px solid black;
+}*/
 
 .container{
-    margin: 0;
-    /*max-width: 1024px;*/
-    justify-content: center;
+    margin: auto;
+    /*max-width: 1366px;*/
 }
 
-/* Header Styling */
+
+/* ---------------------------
+   Business Logo & Nav Bar
+------------------------------*/
 .logo{
     display: flex;
     padding-left: 2rem;
     height: 5.33rem;
-    /*justify-content: center;*/
+    justify-content: center;
 }
 
 .logo img{
@@ -51,122 +63,329 @@ h4{
     margin: auto;
     font-size: 2rem;
     padding: 0 3rem 0 0.25rem;
-    /*align-items: center;*/
-    /*text-align: center;*/
 }
 
-.menu{
+.nav-options{
     display: flex;
     justify-content: flex-end;
     align-items: center;
 }
-
-nav{
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    /*padding: 0 2rem 0 3rem;*/
-}
-
 .nav-items{
     font-size: 1.25rem;
     padding-right: 1.5rem;
 }
 
-/* Banner Styling */
+#bus-name{
+    color: darkgray;
+}
+
+/* ----------------------------
+   Banner Styling
+-------------------------------*/
 .banner{
     display: flex;
+    position: relative;
     background-color: lightgray;
-    justify-content: center;
-    align-items: center;
 }
 
-.banner img{
+.banner-image{
     display: flex;
-    max-width: 60%;
-    /*height: auto;*/
-    /*margin: 2rem;*/
-    padding: 2rem 2.5rem 2rem 2rem;
-
-}
-
-.banner-content{
-    display: block;
-    margin-right: 2rem;
-    padding: 2rem 2.5rem;
-    width: 30%;
-    /*justify-content: center;
-    align-items: center;*/
-}
-
-.start-btn{
-    padding: 0.5rem;
-}
-
-.main-information{
-    display: flex;
-    /*justify-content: center;*/
-}
-
-/*.information{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margain: 0 auto;
-    padding: 2rem, 2.5rem 2rem 2rem;
-    justify-content: space-between;
-}*/
-
-.container .main-information{
-    display: flex;
-}
-
-.main-information{
-    /*display: flex;*/
-    /*margin: 2rem;*/
-    padding: 2rem, 2.5rem 2rem 2rem;
+    margin: 0;
     width: 60%;
-    /*height: auto;*/
+    padding: 2rem 2.5rem 2rem 1.5rem;
+}
+
+.banner-text{
+    display: block;
+    position: relative;
+    justify-content: space-around;
+    align-items: center;
+    padding: 8rem 2rem;
+    line-height: 1.5;
+    width: 25%;
+}
+
+.banner-text h3{
+    padding-top: 2rem;
+}
+
+.banner-btn{
+    display: flex;
+    /*margin: 0.25rem;*/
+    padding: 1.5rem;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    font-family: Helvetica;
+    font-size: 1rem;
+    background-color: darkgray;
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding-top: 2.5rem;
+}
+/* ---------------------------
+   Campus Information Styling
+------------------------------*/
+.main-text{
+    display: flex;
+    flex-direction: row;
+}
+
+.text{
+    display: flex;
+    line-height: 1.5;
+}
+
+.campus-information{
+    margin: 0;
+    width: 60%;
+    padding: 2rem 1.5rem;
+}
+
+.campus-information h2{
+    padding-top: 2rem;
+    padding-bottom: 1.5rem;
+}
+
+.campus-information p{
+    font-size: 1rem;
+    font-weight: 580;
+    padding-top: 2rem;
+}
+
+.main-section{
+    display: flex;
+    margin: 0;
+    padding: 2rem 2.5rem 2rem 1.5rem
 }
 
 .main-image{
-    /*display: flex;*/
-    /*width: 60%;*/
+    display: flex;
+    position: relative;
+    margin: 0;
+    width: 100%;
+}
+
+.other-campus-info{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: 0;
+    width: 40%;
     height: auto;
+    padding-top: 2rem;
+}
+
+.orientation-info{
+    display: flex;
+    padding: 0 1rem 1rem 1rem;
+    width: 100%;
+    height: auto;
+    line-height: 1.2;
+}
+
+.our-campus{
+    display: flex;
+    padding: 1rem;
+    width: 100%;
+    height: auto;
+    line-height: 1.2;
+}
+
+.lecture-info{
+    display: flex;
+    padding: 1rem;
+    width: 100%;
+    height: auto;
+    line-height: 1.5;
+}
+
+.info-image{
+    width: 35%;
+}
+
+.campus-bio{
+    display: flex;
+    flex-direction: column;
+    padding-left: 1.5rem;
+    margin: 0;
+    padding: 0 1rem 1rem 1rem;
+    justify-content: center;
+    /* align-items: center; */
+    text-align: left;
+    line-height: 2.25;
+}
+
+/* -------------------
+   Learning Section
+   -------------------*/
+.learning-title{
+    background-color: lightgray;
+}
+
+/*.learning-courses{
+    background-color: lightgray;
+}*/
+
+.learning-title{
+    display: flex;
+    position: relative;
+    padding: 2rem;
+    justify-content: center;
+}
+
+.learning-courses{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: auto;
+    background-color: lightgray;
+}
+
+.courses{
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 2rem;
+    padding-bottom: 1rem;
+    width: 20%;
+}
+
+.course-images{
+    display: flex;
+}
+
+.course-detail{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    background-color: white;
+    text-align: left;
+    padding: 1rem 1rem 1.5rem 1rem;
+    line-height: 1.5;
+    height: 15%;
+}
+
+.course-detail h3{
+    padding: 0.5rem 0;
+}
+
+.course-detail span{
+    /*padding-top: 13.75rem;*/
+    padding: 0.5rem 0;
+    flex-wrap: wrap;
+}
+
+.course-images img{
+    max-width: 100%;
+    max-height: auto;
+}
+
+.course-title{
+    display: flex;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 0.5rem;
+}
+
+.course-list{
+    display: flex;
+    padding-top: 13.75rem;
+    padding-bottom: 1.5rem;
+}
+
+/* -----------------
+   Thesis Styling
+   -----------------*/
+.thesis-section{
+    display: flex;
+    flex-direction: row;
+}
+
+.thesis-title{
+    display: flex;
+    position: relative;
+    justify-content: center;
     padding: 2rem;
 }
 
-.main-image img{
-    display: flex;
-    height: auto;
-        padding: 2rem, 2.5rem 2rem 2rem;
-}
-
-.columns{
+.thesis-video{
     /*display: flex;*/
-    /*flex-direction: column;*/
-    margin: 0 auto;
-    width: 1024px;
+    position: relative;
+    padding: 0 2.5rem 1.5rem 0;
+    width: 60%;
 }
 
-.information-orient{
+#video{
     display: flex;
-    /*flex-direction: column;*/
-    widht: 30%
-    height: auto;
-    /*background-color: red;*/
+    margin: 0;
+    width: 100%;
+    padding: 0 2rem 2rem 1.5rem;
 }
 
-.information-campus{
+.thesis-sub-section{
     display: flex;
-    widht: 30%
+    flex-direction: column;
+    position: relative;
+    width: 40%;
     height: auto;
-    background-color: blue;
 }
 
-.information-lecture{
+.thesis-video h3{
     display: flex;
-    widht: 30%
-    height: auto;
-    background-color: yellow;
+    position: relative;
+    margin: 0;
+    padding: 0 1.5rem 2rem 1.5rem;
+}
+
+.thesis-video .text{
+    display: flex;
+    padding-left: 1.5rem;
+    line-height: 1.5;
+}
+
+.fisma{
+    display: flex;
+    flex-direction: row;
+    padding: 0 1rem 1rem 1rem;
+}
+
+/*.fisma h3{
+    display: flex;
+    padding-left: 1rem;
+}*/
+
+.thesis-images{
+    display: flex;
+    margin: 0;
+    padding: 1rem;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#thesis-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+    line-height: 2.5;
+}
+
+/* -----------
+   Footer
+   -----------*/
+footer{
+    display: flex;
+    padding: 1.5rem;
+    text-align: left;
+}
+
+.terms-conds{
+    display: flex;
+    justify-content: flex-end;
+    text-align: right;
+    font-weight: bold;
 }
